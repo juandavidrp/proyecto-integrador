@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGC - Sistema de Gestión de Cursos</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/students.css" />
+  </head>
+  <body>
+    <div class="container">
+     <aside class="sidebar">
+            <header class="sidebar-header">
+                <h1>Menú</h1>
+            </header>
+            <main class="sidebar-content">
+                <nav class="sider-nav">
+                    <ul class="sider-nav-list">
+                        <li><a href="Dashboard.html">Dashboard</a></li>
+                        <li><a href="courses.html">Cursos</a></li>
+                        <li><a href="students.html">Estudiantes</a></li>
+                        <li><a href="enrollments.html">Matrículas</a></li>
+                    </ul>
+                </nav>
+            </main>
+            <footer class="sidebar-footer">
+         <div class="user-info">
+               <p>usuario</p>
+               <p>juan david</p>
+         </div>
+        <div class="user-info">
+               <p>correo</p>
+               <p>juandrestrepo@cesde.net</p>
+        </div>
+    </footer>
+</aside>
+    <main class="main-container">
+            <header class="main-header">
+                <h2>Sistema de gestión de cursos</h2>
+                <div class="header-section" >
+                <h3>estudiantes</h3>
+                <button class="add-button">Agregar estudiantes</button>
+                </div>
+                <search class="search-bar">
+                  <input type="text" placeholder="buscar estudiantes..." />
+                </search>
+            </header>
+            <main class="main-content">
+                <div class="table-container">
+                    <table class="students-table">
+                    <colgroup>
+                        <col class="column-id" width="5%" />
+                        <col class="column-text" width="30%" />
+                        <col class="column-text" width="30%"/>
+                        <col class="column-text" width="20%"/>
+                        <col class="column-actions" width="15%" />
+                        </colgroup>
+                    <thead>
+                        <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Correo</th>
+                        <th>Acciones</th>
+                         </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                            <td class="column-id">1</td>
+                            <td class="column-text">juan</td>
+                            <td class="column-text">david</td>
+                            <td class="column-text">juandrestrepo@cesde.net</td>
+                            <td class="column-actions">
+                            <button class="edit-button">Editar</button>
+                            <button class="delete-button">Eliminar</button>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td class="column-id">2</td>
+                                <td class="column-text">juan</td>
+                                <td class="column-text">perez</td>
+                                <td class="column-text">juanperez@cesde.net</td>
+                                <td class="column-actions">
+                                   <button class="edit-button">Editar</button>
+                                   <button class="delete-button">Eliminar</button>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="column-id">3</td>
+                                        <td class="column-text">maria</td>
+                                        <td class="column-text">gomez</td>
+                                        <td class="column-text">mariagomez@cesde.net</td>
+                                        <td class="column-actions">
+                                   <button class="edit-button">Editar</button>
+                                   <button class="delete-button">Eliminar</button>
+                                            </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </main>
+                                <footer class="main-footer">
+                                 <p> 2024 Sistema de gestión de cursos. Todos los derechos reservados.</p>
+                                <p>Desarrollado por: Juan David</p>
+                             </footer>
+                             </main>
+                         </div> 
+                    </body>
+                </html>
