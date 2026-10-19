@@ -38,5 +38,62 @@
     height: 100vh;
 }
     
+.form-student {
+  position: relative;
+}
 
+.close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 20px;
+  color: #555555;
+  text-decoration: none;
+}
 
+.form-group label {
+  font-size: 14px;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #b8c2d1;
+  border-radius: 6px;
+}
+
+.btns {
+  width: 70%;
+}
+
+.add-bith {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(30, 14, 137);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.add-bith.cancel {
+  background-color: #b3261e;
+}
+
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #b8c2d1;
+  border-radius: 6px;
+}
+
+.title-form {
+  margin-bottom: 20px;
+}
+
+.form-group select {
+  padding: 10px;
+  border: 1px solid #b8c2d1;
+  border-radius: 6px;
+  background: white;
+}

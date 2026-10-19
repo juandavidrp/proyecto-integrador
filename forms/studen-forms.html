@@ -1,30 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sgc</title>
+    <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../forms/forms-styles.css" />
 </head>
 <body>
     <div class="container-forms">
         <form class="form-student">
-            <h2 class="title-form">crear estudiantes</h2>
+            <a href="../students.html" class="close">✕</a>
+            <h2 class="title-form">Nuevo estudiante</h2>
+
             <div class="form-group inputs">
-                <label for="name">nombre:</label>
-                <input type="text" name="name">
-                <label for="text" >apellido</label>
-                <input for="text" name="last-name">
-                 <label for="email">correo:</label>
-                 <input type="email" name="email">
-                <label for="phone">telefono:</label>
-                <input type="text" name="phone" />
-            </div>
-            <div class="btns">
-                <button class="add-bith">crear</button>
-                <button class="add-bith">cancelar</button>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="last-name">Apellido</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Celular</label>
+                <input type="text" id="phone" name="phone" required>
             </div>
 
+            <div class="btns">
+                <a href="../students.html" class="add-bith cancel">Cancelar</a>
+                <button type="submit" class="add-bith">Guardar</button>
+            </div>
         </form>
     </div>
 </body>

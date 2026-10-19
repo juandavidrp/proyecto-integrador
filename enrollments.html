@@ -3,59 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SGC - Sistema de Gestión de Cursos</title>
+    <title>SGC - Matrículas</title>
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <div class="container">
-    <aside class="sidebar">
+
+        <aside class="sidebar">
             <header class="sidebar-header">
-                <h1>Menú</h1>
+                <h1>Sistema de Gestión de Cursos</h1>
             </header>
-            <main class="sidebar-content">
+
+            <div class="sidebar-content">
                 <nav class="sider-nav">
                     <ul class="sider-nav-list">
-                        <li><a href="Dashboard.html">Dashboard</a></li>
-                        <li><a href="courses.html">Cursos</a></li>
+                        <li><a href="dashboard.html">Inicio</a></li>
                         <li><a href="students.html">Estudiantes</a></li>
-                        <li><a href="enrollments.html">Matrículas</a></li>
+                        <li><a href="courses.html">Cursos</a></li>
+                        <li><a href="enrollments.html" class="active">Matrículas</a></li>
                     </ul>
                 </nav>
-            </main>
+            </div>
+
             <footer class="sidebar-footer">
-         <div class="user-info">
-               <p>usuario</p>
-               <p>juan david</p>
-         </div>
-        <div class="user-info">
-               <p>correo</p>
-               <p>juandrestrepo@cesde.net</p>
-        </div>
-    </footer>
-</aside>
-    <main class="main-container">
-            <header class="main-header">
-             <header class="main-header">
-                <h2>Sistema de gestión de cursos</h2>
-                <div class="header-section" >
-                <h3>matriculas</h3>
-                <button class="add-button">Agregar estudiantes</button>
-                </div>
-                <search class="search-bar">
-                  <imput type="text" placeholder="buscar estudiantes..." />
-                </search>
-            </header>
-            </header>
-            <main class="main-content">
-                <p>
-                    Este es el contenido de matriculas del sistema de gestion de cursos
-            </main>
-            <footer class="main-footer">
-                <p> 2024 Sistema de gestión de cursos. Todos los derechos reservados.</p>
-                <p>Desarrollado por: Juan David</p>
+                <p>Admin</p>
+                <p>juandrestrepo@cesde.net</p>
             </footer>
-     </main>
- </div> 
+        </aside>
+
+        <div class="main-container">
+
+            <header class="main-header">
+                <h2>Sistema de Gestión de Cursos</h2>
+            </header>
+
+            <main class="main-content">
+
+                <div class="header-section">
+                    <div>
+                        <h3 class="page-title">Matrículas</h3>
+                        <p class="subtitle">Gestión de matrículas registradas</p>
+                    </div>
+                    <a href="forms/enrollments-forms.html" class="add-button">Nueva Matrícula</a>
+                </div>
+
+                <div class="toolbar">
+                    <input class="search-bar" type="text" placeholder="Buscar estudiante o curso..." />
+                    <select class="filter-select">
+                        <option>Todos los estados</option>
+                        <option>Activa</option>
+                        <option>Completada</option>
+                        <option>Cancelada</option>
+                    </select>
+                </div>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Estudiante</th>
+                            <th>Curso</th>
+                            <th>Fecha</th>
+                            <th>Estado</th>
+                            <th class="center">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan Pérez</td>
+                            <td>React Desde Cero</td>
+                            <td>2026-07-30</td>
+                            <td>ACTIVA</td>
+                            <td class="center">
+                                <button class="btn-edit">Editar</button>
+                                <button class="btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Juan David</td>
+                            <td>Spring Boot</td>
+                            <td>2026-07-30</td>
+                            <td>CANCELADA</td>
+                            <td class="center">
+                                <button class="btn-edit">Editar</button>
+                                <button class="btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Maria Perez</td>
+                            <td>Spring Boot</td>
+                            <td>2026-07-30</td>
+                            <td>COMPLETADA</td>
+                            <td class="center">
+                                <button class="btn-edit">Editar</button>
+                                <button class="btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Juan David</td>
+                            <td>React Desde Cero</td>
+                            <td>2026-07-29</td>
+                            <td>ACTIVA</td>
+                            <td class="center">
+                                <button class="btn-edit">Editar</button>
+                                <button class="btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </main>
+
+            <footer class="main-footer">
+                <p>Derechos reservados Cesde</p>
+                <p>Autor: Juan David</p>
+            </footer>
+
+        </div>
+    </div>
 </body>
 </html>
